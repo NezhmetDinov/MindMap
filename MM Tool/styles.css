@@ -1,0 +1,26 @@
+.timeClass {
+  font-family: arial, verdana, helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 20pt;
+  font: bold;
+  color: green;
+}
+
+#insWE {
+  border: 2px solid #a1a1a1;
+  background: #dddddd;
+  width: 75%;
+  border-radius: 15px;
+}
+
+#insCW {
+  border: 2px solid #a1a1a1;
+  background: #dddddd;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.instructions {
+  text-align: center;
+  margin: auto;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Single Mind Map</title>
+
+  <link href="css/customstyles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/app.css" type="text/css">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <table id="containerTable">
+    <tr>
+      <td id="leftPane" valign="top">
+
+        <div id="textHolder" align="center" style="color:red; font-weight:bold; font-size:20px;">Company name displayed here!!!</div>
+        <textarea id="textArea" rows="30" disabled></textarea>
+
+        <button class="btn" id="drawBtn" data-placement="right" style="visibility:hidden;" onClick="move()">
+          <h4 style="display:inline">Draw Mind Map</h4>
+        </button>
+
+      </td>
+      <td align="center" valign="top">
+        <div id="midPanel" align="center">
+
+          <button id="startTimer" onClick="countDown()">
+            <h4 style="display:inline; color:red">Start Application</h4>
+          </button>
+          <span id="theTime" class="timeClass"></span>&emsp;&emsp;
+          <button id="skipTimer" style="visibility:hidden">
+            <h4 style="display:inline; color:red">I'm done</h4>
+          </button>
+          <button id="showLinks" onClick="show()">Show Links</button>
+          <div id="showlinks"></div><br /><br />
+
+          <div id="insCW" style="visibility:hidden; font-size:14px;">
+            <p style="color:red; font-weight:bold;">Instructions</p>
+            <p>To connect concepts, click on a word in a gray circle and drag it to another word.</p>
+            <p>If your screen is crowded, you can space things out by clicking and dragging the gray circles. To do that, click on the gray circle to turn it "white". Press and hold the "Ctrl" key on PC (or "Command" key on Mac) and drag the gray
+              circle.</p>
+          </div>
+
+            <div id="insWE" style="font-size:14px;">
+              <p style="color:red; font-weight:bold;">Instructions</p>
+              <p>To begin, place your cursor under the company name listed in red bold lettering in the box on the left. Type any words on the next line that come to mind when you think about the company. There are no correct or incorrect answers. Be
+                sure to hit the "Enter" key after every word.</p>
+              <p>When you are done entering the words, you may either wait for the timer to stop or click the "I'm done" button.</p>
+              <p>Then click the "Draw Mind Map" button below the box.</p>
+              <p id="lastLine">When you are ready to begin, click the "Start Application" button.</p>
+
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <script src="js/d3.v3.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
